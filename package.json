@@ -1,0 +1,20 @@
+{
+  "name": "aicontribution",
+  "version": "1.0.0",
+  "description": "AI Factory - Turn GitHub contributions into an agentic software factory visualisation",
+  "main": "src/index.js",
+  "scripts": {
+    "generate": "node src/index.js",
+    "test": "node --test src/**/*.test.js"
+  },
+  "keywords": [
+    "github",
+    "contributions",
+    "svg",
+    "animation",
+    "ai-factory",
+    "agentic"
+  ],
+  "author": "Sujith Quintelier",
+  "license": "MIT"
+}
