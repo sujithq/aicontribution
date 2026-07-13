@@ -1,0 +1,29 @@
+name: 'AI Factory Contribution Graph'
+description: 'Generate an animated SVG contribution graph with agentic SDLC visualisation'
+author: 'Sujith Quintelier'
+
+inputs:
+  github_user:
+    description: 'GitHub username to generate the graph for'
+    required: false
+    default: ${{ github.repository_owner }}
+  theme:
+    description: 'Theme to use (github, github-dark, azure, fabric)'
+    required: false
+    default: 'github'
+  output_path:
+    description: 'Path for the generated SVG'
+    required: false
+    default: 'output/ai-factory.svg'
+
+outputs:
+  svg_path:
+    description: 'Path to the generated SVG file'
+
+runs:
+  using: 'node20'
+  main: 'src/index.js'
+
+branding:
+  icon: 'cpu'
+  color: 'blue'
